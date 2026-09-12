@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishu Tours and Travels — City, Outstation & Tour Packages</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <!--
+  PLACEHOLDERS TO REPLACE BEFORE GOING LIVE:
+  - Driver / business name: currently "Nishu" / "Nishu Tours and Travels"
+  - Phone number: currently +91 98765 43210
+  - WhatsApp number: currently 919876543210 (used in the wa.me link, no + or spaces)
+  - City: currently Bengaluru
+  - Packages, prices and vehicle details are sample figures — swap for real ones
+  - Photos are stock/placeholder images from Unsplash
+-->
+
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="#top" class="nav-logo">Nishu Tours and Travels<span>.</span></a>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#packages">Packages</a>
+                <a href="#why">Why Me</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="tel:+918861947700" class="nav-phone">+91 88619 47700</a>
+            <button id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="route-wrap" id="top">
+
+        <!-- the road line that draws itself as you scroll -->
+        <div class="route-line" id="route-line">
+            <div class="route-line-fill" id="route-fill"></div>
+        </div>
+
+        <!-- HERO -->
+        <header class="hero">
+            <div class="hero-inner">
+                <p class="hero-kicker">City rides · Outstation · Tour packages · Bengaluru</p>
+                <h1 class="hero-title">
+                    <span class="line">Wherever you're</span>
+                    <span class="line">headed, I'll get</span>
+                    <span class="line">you there.</span>
+                </h1>
+                <p class="hero-sub">16 years behind the wheel, one driver, one car, no middlemen. Book directly —
+                    pickups, drop-offs and full-day trips around Bengaluru and beyond.</p>
+                <div class="hero-actions">
+                    <a href="tel:+918861947700" class="btn btn-primary">Call Now</a>
+                    <a href="https://wa.me/918861947700" class="btn btn-outline" target="_blank" rel="noopener">WhatsApp
+                        Me</a>
+                </div>
+                <div class="road-strip"></div>
+                <div class="hero-stats">
+                    <div class="stat"><strong data-target="15" data-suffix="+">0</strong><span>Years driving</span>
+                    </div>
+                    <div class="stat"><strong data-target="2000" data-suffix="+">0</strong><span>Trips completed</span>
+                    </div>
+                    <div class="stat"><strong>24/7</strong><span>Available</span></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- SERVICES -->
+        <section class="stop" id="services">
+            <div class="stop-marker"></div>
+            <div class="stop-content">
+                <p class="section-kicker">Services</p>
+                <h2>Three ways to book me</h2>
+
+                <div class="service-row reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48">
+                            <path d="M8 30h32M12 30l3-9h18l3 9M16 30v5M32 30v5M13 25h22" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <div class="service-text">
+                        <h3>City rides</h3>
+                        <p>Point-to-point drops, airport runs, or keep me on hourly hire for errands and meetings around
+                            the city.</p>
+                    </div>
+                </div>
+
+                <div class="service-row reverse">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48">
+                            <path d="M6 38h36M10 38l6-22h16l6 22M18 20h12" stroke="currentColor" stroke-width="2"
+                                fill="none" stroke-linecap="round" />
+                            <circle cx="16" cy="38" r="3" fill="currentColor" />
+                            <circle cx="32" cy="38" r="3" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="service-text">
+                        <h3>Outstation trips</h3>
+                        <p>One-way or round trips to nearby cities — Mysore, Coorg, Ooty and more. I know the routes and
+                            the rest stops.</p>
+                    </div>
+                </div>
+
+                <div class="service-row">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48">
+                            <path d="M6 36l12-16 8 10 6-8 10 14H6z" stroke="currentColor" stroke-width="2" fill="none"
+                                stroke-linejoin="round" />
+                            <circle cx="16" cy="14" r="3" stroke="currentColor" stroke-width="2" fill="none" />
+                        </svg>
+                    </div>
+                    <div class="service-text">
+                        <h3>Tour packages</h3>
+                        <p>Full-day and multi-day sightseeing packages with a fixed price — no surprise charges at the
+                            end of the trip.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PACKAGES / PRICING -->
+        <section class="packages-section" id="packages">
+            <p class="section-kicker light">Rate Card</p>
+            <h2>Nishu Tours And Travels — Pricing</h2>
+            <p class="section-note light">Prices exclude GST. Toll, parking, permits and state entry charges are extra
+                and payable by the customer. Rates may vary by season and distance.</p>
+
+            <div class="rate-groups reveal">
+                <div class="rate-group">
+                    <h3>City → Airport <span>Flat rate, pickup &amp; drop</span></h3>
+                    <div class="rate-list">
+                        <div class="rate-row"><span>Sedan</span><span>₹1,200</span></div>
+                        <div class="rate-row"><span>SUV</span><span>₹1,800</span></div>
+                        <div class="rate-row"><span>Innova Crysta</span><span>₹2,100</span></div>
+                    </div>
+                </div>
+
+                <div class="rate-group reveal">
+                    <h3>Outstation <span>Per km, garage to garage</span></h3>
+                    <div class="rate-list">
+                        <div class="rate-row"><span>Sedan</span><span>₹13 / km</span></div>
+                        <div class="rate-row"><span>SUV</span><span>₹17 / km</span></div>
+                        <div class="rate-row"><span>Innova Crysta</span><span>₹20 / km</span></div>
+                    </div>
+                </div>
+
+                <div class="rate-group reveal">
+                    <h3>Driver Bhata <span>Driver allowance, per day</span></h3>
+                    <div class="rate-list">
+                        <div class="rate-row"><span>Sedan</span><span>₹400 / day</span></div>
+                        <div class="rate-row"><span>SUV</span><span>₹500 / day</span></div>
+                        <div class="rate-row"><span>Innova Crysta</span><span>₹600 / day</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="rate-footnote">⚠ Toll &amp; parking charges extra, on top of the rates above.</p>
+        </section>
+
+        <!-- WHY CHOOSE -->
+        <section class="stop" id="why">
+            <div class="stop-marker"></div>
+            <div class="stop-content why-content">
+                <p class="section-kicker">Why book with me</p>
+                <h2>No fleet, no call centre — just me and the road</h2>
+                <ul class="why-list reveal">
+                    <li class="reveal"><strong>Same driver, every time.</strong> You're not getting a random assigned driver — you're
+                        booking me directly.</li>
+                    <li class="reveal"><strong>Fair, upfront pricing.</strong> The price I quote is the price you pay, agreed before we
+                        start.</li>
+                    <li class="reveal"><strong>Early mornings, late nights.</strong> Available for odd-hour airport runs and early
+                        starts on outstation trips.</li>
+                    <li class="reveal"><strong>16 years of local knowledge.</strong> Shortcuts, rest stops, and the good places to eat
+                        on the way.</li>
+                    <li class="reveal"><strong>Well-maintained car.</strong> Regularly serviced, clean, and ready for long drives.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- VEHICLE -->
+        <section class="vehicle-section">
+            <div class="vehicle-image">
+                <img src="./HD-wallpaper-suzuki-ertiga-minivans-2019-cars-parking-japanese-cars-2019-suzuki-ertiga-suzuki.jpg"
+                    alt="Sedan car used for rides">
+            </div>
+            <div class="vehicle-details">
+                <p class="section-kicker">The car</p>
+                <h2>Maruti Suzuki Ertiga</h2>
+                <ul class="specs reveal">
+                    <li class="reveal"><span>Seating</span><span>6 passengers + driver</span></li>
+                    <li class="reveal"><span>Luggage</span><span>2 large bags comfortably</span></li>
+                    <li class="reveal"><span>Comfort</span><span>AC, music, phone charging</span></li>
+                    <li class="reveal"><span>Condition</span><span>Serviced every month</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- VEHICLE -->
+        <section class="vehicle-section">
+            <div class="vehicle-image">
+                <img src="./Best-Uses-of-Toyota-Etios-Rental-in-Varanasi-1024x1024.webp"
+                    alt="Sedan car used for rides">
+            </div>
+            <div class="vehicle-details">
+                <p class="section-kicker">The car</p>
+                <h2>Toyato Etios - Ac sedan</h2>
+                <ul class="specs reveal">
+                    <li class="reveal"><span>Seating</span><span>4 passengers + driver</span></li>
+                    <li class="reveal"><span>Luggage</span><span>2 large bags comfortably</span></li>
+                    <li class="reveal"><span>Comfort</span><span>AC, music, phone charging</span></li>
+                    <li class="reveal"><span>Condition</span><span>Serviced every month</span></li>
+                </ul>
+            </div>
+        </section>
+        <!-- VEHICLE -->
+        <section class="vehicle-section">
+            <div class="vehicle-image">
+                <img src="./front-left-quarter-view-342224715_930x620.avif"
+                    alt="Sedan car used for rides">
+            </div>
+            <div class="vehicle-details">
+                <p class="section-kicker">The car</p>
+                <h2>Innova crysta</h2>
+                <ul class="specs reveal">
+                    <li class="reveal"><span>Seating</span><span>7 passengers + driver</span></li>
+                    <li class="reveal"><span>Luggage</span><span>3 large bags comfortably</span></li>
+                    <li class="reveal"><span>Comfort</span><span>AC, music, phone charging</span></li>
+                    <li class="reveal"><span>Condition</span><span>Serviced every month</span></li>
+                </ul>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <div class="stop-marker end-marker"></div>
+            <div class="contact-inner">
+                <p class="section-kicker light">Book a ride</p>
+                <h2>Ready when you are</h2>
+                <p class="section-note light">Call or WhatsApp for a quick quote, or leave your details and I'll call
+                    you back.</p>
+
+                <div class="contact-actions">
+                    <a href="tel:+918861947700" class="btn btn-primary">Call +91 88619 47700</a>
+                    <a href="https://wa.me/918861947700" class="btn btn-outline" target="_blank"
+                        rel="noopener">WhatsApp</a>
+                </div>
+
+                <form id="booking-form">
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="route">Pickup → Drop</label>
+                            <input type="text" id="route" name="route" placeholder="e.g. Bengaluru to Mysore" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="date">Travel Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message (optional)</label>
+                        <textarea id="message" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full">Request Callback</button>
+                </form>
+
+                <p id="confirmation-msg" class="hidden">✅ Got it — I'll call you back shortly to confirm your trip.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="site-footer">
+        <p><strong>Nishu Tours and Travels</strong> — Serving Bengaluru &amp; nearby routes</p>
+        <p><a href="tel:+918861947700">+91 88619 47700</a> · Available 24/7</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
