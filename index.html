@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishu Tours & Travels | Explore Karnataka & Beyond</title>
+  <meta name="description"
+    content="Nishu Tours & Travels — your trusted travel partner for exploring Karnataka and beyond. Custom tours, airport transfers, corporate travel, and more." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet" />
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Nishu Tours & Travels",
+    "description": "Custom tours, airport transfers, corporate travel and sightseeing packages across Karnataka and India.",
+    "url": "https://nishchal2110-ind.github.io/Nishu-Tours-and-Travels/",
+    "areaServed": "Karnataka, India"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-bar" id="scrollBar"></div>
+
+  <!-- Particles Canvas -->
+  <canvas id="particlesCanvas" class="particles-canvas"></canvas>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+
+      <a href="#home" class="nav-logo">
+        <div class="logo-icon">✈</div>
+        <div class="logo-text">
+          <span class="logo-main">Nishu</span>
+          <span class="logo-sub">Tours & Travels</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nl active" data-sec="home">Home</a></li>
+        <li><a href="#services" class="nl" data-sec="services">Services</a></li>
+        <li><a href="#destinations" class="nl" data-sec="destinations">Destinations</a></li>
+        <li><a href="#packages" class="nl" data-sec="packages">Packages</a></li>
+        <li><a href="#gallery" class="nl" data-sec="gallery">Gallery</a></li>
+        <li><a href="#contact" class="nl" data-sec="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#contact" class="btn btn-gold nav-cta mag-btn">Book Now</a>
+        <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mob-menu" id="mobMenu" aria-hidden="true">
+    <button class="mob-close" id="mobClose">✕</button>
+    <ul class="mob-links">
+      <li><a href="#home" class="mob-link">Home</a></li>
+      <li><a href="#services" class="mob-link">Services</a></li>
+      <li><a href="#destinations" class="mob-link">Destinations</a></li>
+      <li><a href="#packages" class="mob-link">Packages</a></li>
+      <li><a href="#gallery" class="mob-link">Gallery</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-gold mob-cta">Book Your Journey</a>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="home">
+
+    <!-- Layered bg -->
+    <div class="hero-bg">
+      <div class="hbg hbg-1"></div>
+      <div class="hbg hbg-2"></div>
+      <div class="hbg hbg-3"></div>
+      <div class="hero-vignette"></div>
+    </div>
+
+    <!-- Floating petals / particles decoration -->
+    <div class="petal-wrap" id="petalWrap"></div>
+
+    <!-- Light sweep -->
+    <div class="light-sweep"></div>
+
+    <div class="hero-content" id="heroContent">
+
+      <div class="hero-eyebrow ri">
+        <span class="eyebrow-line"></span>
+        <span>Explore · Discover · Experience</span>
+        <span class="eyebrow-line"></span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="ht-line ri">Journey Beyond</span>
+        <span class="ht-script ri">the Ordinary</span>
+      </h1>
+
+      <p class="hero-sub ri">
+        Karnataka's most trusted travel partner — crafting unforgettable journeys<br />
+        from airport transfers to full Karnataka explorations.
+      </p>
+
+      <div class="hero-badges ri">
+        <div class="hbadge">
+          <span class="hb-icon">🛡️</span>
+          <span>Trusted Service</span>
+        </div>
+        <div class="hbadge">
+          <span class="hb-icon">🌟</span>
+          <span>Best Prices</span>
+        </div>
+        <div class="hbadge">
+          <span class="hb-icon">🤝</span>
+          <span>24/7 Support</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Stats bar -->
+    <div class="hero-stats" id="heroStats">
+      <div class="hstat-item">
+        <div class="hstat-num" data-target="1000" data-suffix="+">0</div>
+        <div class="hstat-lbl">Happy Travellers</div>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat-item">
+        <div class="hstat-num" data-target="50" data-suffix="+">0</div>
+        <div class="hstat-lbl">Destinations</div>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat-item">
+        <div class="hstat-num" data-target="15" data-suffix="+">0</div>
+        <div class="hstat-lbl">Years Experience</div>
+      </div>
+      <div class="hstat-div"></div>
+      <div class="hstat-item">
+        <div class="hstat-num" data-target="100" data-suffix="%">0</div>
+        <div class="hstat-lbl">Satisfaction</div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="scroll-cue">
+      <div class="sc-mouse">
+        <div class="sc-wheel"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       TICKER
+  ============================================================ -->
+  <div class="ticker-wrap">
+    <div class="ticker-inner" id="tickerInner">
+      <span class="ti">Coorg</span><span class="ts">✦</span>
+      <span class="ti">Mysore</span><span class="ts">✦</span>
+      <span class="ti">Hampi</span><span class="ts">✦</span>
+      <span class="ti">Chikmagalur</span><span class="ts">✦</span>
+      <span class="ti">Gokarna</span><span class="ts">✦</span>
+      <span class="ti">Sakleshpur</span><span class="ts">✦</span>
+      <span class="ti">Bandipur</span><span class="ts">✦</span>
+      <span class="ti">Udupi</span><span class="ts">✦</span>
+      <span class="ti">Belur</span><span class="ts">✦</span>
+      <span class="ti">Badami</span><span class="ts">✦</span>
+      <span class="ti">Coorg</span><span class="ts">✦</span>
+      <span class="ti">Mysore</span><span class="ts">✦</span>
+      <span class="ti">Hampi</span><span class="ts">✦</span>
+      <span class="ti">Chikmagalur</span><span class="ts">✦</span>
+      <span class="ti">Gokarna</span><span class="ts">✦</span>
+      <span class="ti">Sakleshpur</span><span class="ts">✦</span>
+      <span class="ti">Bandipur</span><span class="ts">✦</span>
+      <span class="ti">Udupi</span><span class="ts">✦</span>
+      <span class="ti">Belur</span><span class="ts">✦</span>
+      <span class="ti">Badami</span><span class="ts">✦</span>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section class="services sec-pad" id="services">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag ri">What We Offer</span>
+        <h2 class="sec-title ri">Our <span class="gold-text">Services</span></h2>
+        <p class="sec-sub ri">From a single airport pickup to a complete Karnataka road trip — we've got you covered</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="srv-card tilt-card ri" data-d="0">
+          <div class="srv-glow"></div>
+          <div class="srv-icon">✈️</div>
+          <h3 class="srv-title">Airport Transfers</h3>
+          <p class="srv-desc">Reliable, punctual airport pickups and drops. Flight tracking, meet & greet — hassle-free
+            travel from day one.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+
+        <div class="srv-card tilt-card ri" data-d="100">
+          <div class="srv-glow"></div>
+          <div class="srv-icon">🏔️</div>
+          <h3 class="srv-title">Hill Station Tours</h3>
+          <p class="srv-desc">Coorg, Chikmagalur, Sakleshpur and more — expertly guided mountain getaways with
+            comfortable vehicles.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+
+        <div class="srv-card tilt-card ri" data-d="200">
+          <div class="srv-glow"></div>
+          <div class="srv-icon">🏛️</div>
+          <h3 class="srv-title">Heritage & Culture Tours</h3>
+          <p class="srv-desc">Mysore Palace, Hampi ruins, Belur-Halebidu temples — step into Karnataka's magnificent
+            history.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+
+        <div class="srv-card tilt-card ri" data-d="300">
+          <div class="srv-glow"></div>
+          <div class="srv-icon">🌊</div>
+          <h3 class="srv-title">Beach & Coastal Tours</h3>
+          <p class="srv-desc">Gokarna, Karwar, Udupi — pristine beaches and coastal temples along Karnataka's stunning
+            coastline.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+
+        <div class="srv-card tilt-card ri" data-d="400">
+          <div class="srv-glow"></div>
+          <div class="srv-icon">🦁</div>
+          <h3 class="srv-title">Wildlife & Safari Tours</h3>
+          <p class="srv-desc">Bandipur, Nagarhole, Kabini — thrilling jungle safaris with comfortable stays nearby.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+
+        <div class="srv-card tilt-card ri" data-d="500">
+          <div class="srv-glow"></div>
+          <div class="srv-icon">💼</div>
+          <h3 class="srv-title">Corporate Travel</h3>
+          <p class="srv-desc">Outstation corporate trips, conference travel, team offsites — managed professionally,
+            always on time.</p>
+          <div class="srv-arrow">→</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURED DESTINATIONS IN KARNATAKA
+  ============================================================ -->
+  <section class="destinations sec-pad" id="destinations">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag ri">Incredible Karnataka</span>
+        <h2 class="sec-title ri">Must-Visit <span class="gold-text">Destinations</span></h2>
+        <p class="sec-sub ri">Handpicked gems of Karnataka — each one a world of its own</p>
+      </div>
+
+      <div class="dest-grid">
+
+        <!-- DESTINATION 1: Coorg -->
+        <div class="dest-card dest-large ri" data-d="0">
+          <div class="dest-img-wrap">
+            <img src="./coorg.jpg" alt="Coorg coffee plantations - stock photo" class="dest-img" loading="eager" />
+            <div class="dest-overlay"></div>
+          </div>
+          <div class="dest-info">
+            <div class="dest-badge">🏆 Most Popular</div>
+            <h3 class="dest-name">Coorg</h3>
+            <p class="dest-tagline">Scotland of India</p>
+            <div class="dest-tags">
+              <span>☕ Coffee</span>
+              <span>🌿 Mist</span>
+              <span>🏞️ Waterfalls</span>
+            </div>
+            <p class="dest-desc">Misty mountains, sprawling coffee estates, and cascading waterfalls — Coorg is
+              Karnataka's crown jewel for nature lovers.</p>
+            <a href="#contact" class="btn btn-gold dest-btn">Plan This Trip</a>
+          </div>
+        </div>
+
+        <!-- DESTINATION 2: Mysore -->
+        <div class="dest-card ri" data-d="100">
+          <div class="dest-img-wrap">
+            <img src="./mysore.jpg" alt="Mysore Palace illuminated - stock photo" class="dest-img" loading="lazy" />
+            <div class="dest-overlay"></div>
+          </div>
+          <div class="dest-info">
+            <h3 class="dest-name">Mysore</h3>
+            <p class="dest-tagline">City of Palaces</p>
+            <div class="dest-tags">
+              <span>👑 Royalty</span>
+              <span>🎨 Art</span>
+            </div>
+            <a href="#contact" class="btn btn-gold dest-btn">Plan This Trip</a>
+          </div>
+        </div>
+
+        <!-- DESTINATION 3: Hampi -->
+        <div class="dest-card ri" data-d="200">
+          <div class="dest-img-wrap">
+            <img src="./hampi.jpg" alt="Hampi ruins - stock photo" class="dest-img" loading="lazy" />
+            <div class="dest-overlay"></div>
+          </div>
+          <div class="dest-info">
+            <h3 class="dest-name">Hampi</h3>
+            <p class="dest-tagline">UNESCO World Heritage</p>
+            <div class="dest-tags">
+              <span>🏛️ History</span>
+              <span>🪨 Boulders</span>
+            </div>
+            <a href="#contact" class="btn btn-gold dest-btn">Plan This Trip</a>
+          </div>
+        </div>
+
+        <!-- DESTINATION 4: Chikmagalur -->
+        <div class="dest-card ri" data-d="300">
+          <div class="dest-img-wrap">
+            <img src="./chikamagalur.jpg" alt="Chikmagalur hills - stock photo" class="dest-img" loading="lazy" />
+            <div class="dest-overlay"></div>
+          </div>
+          <div class="dest-info">
+            <h3 class="dest-name">Chikmagalur</h3>
+            <p class="dest-tagline">Land of Coffee Origins</p>
+            <div class="dest-tags">
+              <span>⛰️ Peaks</span>
+              <span>☕ Coffee</span>
+            </div>
+            <a href="#contact" class="btn btn-gold dest-btn">Plan This Trip</a>
+          </div>
+        </div>
+
+        <!-- DESTINATION 5: Gokarna -->
+        <div class="dest-card ri" data-d="400">
+          <div class="dest-img-wrap">
+            <img src="./gokarna.jpg" alt="Gokarna beach - stock photo" class="dest-img" loading="lazy" />
+            <div class="dest-overlay"></div>
+          </div>
+          <div class="dest-info">
+            <h3 class="dest-name">Gokarna</h3>
+            <p class="dest-tagline">Sacred Beach Town</p>
+            <div class="dest-tags">
+              <span>🌊 Beaches</span>
+              <span>🙏 Temples</span>
+            </div>
+            <a href="#contact" class="btn btn-gold dest-btn">Plan This Trip</a>
+          </div>
+        </div>
+
+        <!-- DESTINATION 6: Bandipur -->
+        <div class="dest-card ri" data-d="500">
+          <div class="dest-img-wrap">
+            <img src="./bandipur.jpg" alt="Wildlife safari - stock photo" class="dest-img" loading="lazy" />
+            <div class="dest-overlay"></div>
+          </div>
+          <div class="dest-info">
+            <h3 class="dest-name">Bandipur</h3>
+            <p class="dest-tagline">Tiger Reserve & Safari</p>
+            <div class="dest-tags">
+              <span>🐯 Wildlife</span>
+              <span>🌳 Forest</span>
+            </div>
+            <a href="#contact" class="btn btn-gold dest-btn">Plan This Trip</a>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="stock-note">Stock images from Unsplash — for portfolio demonstration only.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PACKAGES SECTION
+  ============================================================ -->
+  <section class="packages sec-pad" id="packages">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag ri">Curated Journeys</span>
+        <h2 class="sec-title ri">Tour <span class="gold-text">Packages</span></h2>
+        <p class="sec-sub ri">Carefully designed packages to make your travel seamless and memorable</p>
+      </div>
+
+      <div class="pkg-grid">
+
+        <div class="pkg-card ri" data-d="0">
+          <div class="pkg-img-wrap">
+            <img src="./coorg.jpg" alt="Coorg weekend package - stock photo" class="pkg-img" loading="lazy" />
+            <div class="pkg-img-overlay"></div>
+            <div class="pkg-duration">2 Nights / 3 Days</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-tags">
+              <span class="pkg-tag">Hill Station</span>
+              <span class="pkg-tag">Nature</span>
+            </div>
+            <h3 class="pkg-title">Coorg Weekend Retreat</h3>
+            <p class="pkg-desc">Abbey Falls, Raja's Seat, Talacauvery, Nagarhole — a perfect Coorg getaway.</p>
+            <div class="pkg-includes">
+              <span>🚗 Cab</span>
+              <span>🏨 Hotel</span>
+            </div>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="price-from">Starting from</span>
+                <span class="price-amt">₹13<span class="per-person">/kilometer</span></span>
+              </div>
+              <a href="#contact" class="btn btn-gold pkg-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card pkg-featured ri" data-d="150">
+          <div class="pkg-badge">⭐ Best Value</div>
+          <div class="pkg-img-wrap">
+            <img src="./chamundihills.jpg" alt="Karnataka Heritage tour - stock photo" class="pkg-img" loading="lazy" />
+            <div class="pkg-img-overlay"></div>
+            <div class="pkg-duration">3 Nights / 4 Days</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-tags">
+              <span class="pkg-tag">Heritage</span>
+              <span class="pkg-tag">Culture</span>
+            </div>
+            <h3 class="pkg-title">Mysore Heritage Circuit</h3>
+            <p class="pkg-desc">Mysore Palace, Chamundi Hill, Srirangapatna, Somnathpur — royal Karnataka in one sweep.
+            </p>
+            <div class="pkg-includes">
+              <span>🚗 Cab</span>
+              <span>🏨 Hotel</span>
+            </div>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="price-from">Starting from</span>
+                <span class="price-amt">₹13<span class="per-person">/kilometer</span></span>
+              </div>
+              <a href="#contact" class="btn btn-gold pkg-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pkg-card ri" data-d="300">
+          <div class="pkg-img-wrap">
+            <img src="./gokarna.jpg" alt="Beach package - stock photo" class="pkg-img" loading="lazy" />
+            <div class="pkg-img-overlay"></div>
+            <div class="pkg-duration">2 Nights / 3 Days</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-tags">
+              <span class="pkg-tag">Beach</span>
+              <span class="pkg-tag">Coastal</span>
+            </div>
+            <h3 class="pkg-title">Gokarna Beach Escape</h3>
+            <p class="pkg-desc">Om Beach, Half Moon Beach, Mahabaleshwar Temple, Mirjan Fort — the coastal soul of
+              Karnataka.</p>
+            <div class="pkg-includes">
+              <span>🚗 Cab</span>
+              <span>🏨 Hotel</span>
+            </div>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="price-from">Starting from</span>
+                <span class="price-amt">₹13<span class="per-person">/kilometer</span></span>
+              </div>
+              <a href="#contact" class="btn btn-gold pkg-btn">Book Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="stock-note">Prices are illustrative placeholders — contact us for actual package pricing.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WHY CHOOSE US
+  ============================================================ -->
+  <section class="why sec-pad" id="why">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag ri">Our Promise</span>
+        <h2 class="sec-title ri">Why Choose <span class="gold-text">Nishu Travels?</span></h2>
+      </div>
+
+      <div class="why-grid spotlight-zone" id="whyGrid">
+
+        <div class="why-card ri" data-d="0">
+          <div class="why-icon-wrap">
+            <span class="why-icon">🛡️</span>
+          </div>
+          <h3 class="why-title">Trusted & Safe</h3>
+          <p class="why-desc">Years of serving travellers with transparent pricing, verified vehicles, and professional
+            drivers.</p>
+        </div>
+
+        <div class="why-card ri" data-d="100">
+          <div class="why-icon-wrap">
+            <span class="why-icon">💰</span>
+          </div>
+          <h3 class="why-title">Best Prices</h3>
+          <p class="why-desc">Competitive rates with no hidden charges. We match or beat any equivalent offer —
+            guaranteed.</p>
+        </div>
+
+        <div class="why-card ri" data-d="200">
+          <div class="why-icon-wrap">
+            <span class="why-icon">🗺️</span>
+          </div>
+          <h3 class="why-title">Local Expertise</h3>
+          <p class="why-desc">Born and based in Karnataka — we know every road, every hidden gem, and every scenic
+            shortcut.</p>
+        </div>
+
+        <div class="why-card ri" data-d="300">
+          <div class="why-icon-wrap">
+            <span class="why-icon">🕐</span>
+          </div>
+          <h3 class="why-title">24/7 Support</h3>
+          <p class="why-desc">Round-the-clock assistance before, during, and after your trip. Never stranded, always
+            supported.</p>
+        </div>
+
+        <div class="why-card ri" data-d="400">
+          <div class="why-icon-wrap">
+            <span class="why-icon">🚗</span>
+          </div>
+          <h3 class="why-title">Premium Vehicles</h3>
+          <p class="why-desc">Well-maintained fleet of sedans, SUVs, and mini-buses — clean, comfortable, and
+            GPS-tracked.</p>
+        </div>
+
+        <div class="why-card ri" data-d="500">
+          <div class="why-icon-wrap">
+            <span class="why-icon">✨</span>
+          </div>
+          <h3 class="why-title">Custom Itineraries</h3>
+          <p class="why-desc">No rigid tour bus schedules. We build your journey around your pace, preferences, and
+            budget.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALLERY SECTION
+  ============================================================ -->
+  <section class="gallery sec-pad" id="gallery">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag ri">Visual Stories</span>
+        <h2 class="sec-title ri">Travel <span class="gold-text">Gallery</span></h2>
+        <p class="sec-sub ri">Stock images — for portfolio demonstration only. Not actual trip photos.</p>
+      </div>
+
+      <div class="gal-grid">
+
+        <div class="gal-item gal-tall ri" data-d="0">
+          <img src="./coorg.jpg" alt="Coorg - stock photo" loading="lazy" />
+          <div class="gal-overlay"><span>Coorg Mist</span></div>
+        </div>
+
+        <div class="gal-item ri" data-d="100">
+          <img src="./mysore.jpg" alt="Mysore Palace - stock photo" loading="lazy" />
+          <div class="gal-overlay"><span>Mysore Palace</span></div>
+        </div>
+
+        <div class="gal-item ri" data-d="150">
+          <img src="./hampi.jpg" alt="Hampi - stock photo" loading="lazy" />
+          <div class="gal-overlay"><span>Hampi Ruins</span></div>
+        </div>
+
+        <div class="gal-item gal-wide ri" data-d="200">
+          <img src="./chikamagalur.jpg" alt="Mountains - stock photo" loading="lazy" />
+          <div class="gal-overlay"><span>Chikmagalur Peaks</span></div>
+        </div>
+
+        <div class="gal-item ri" data-d="250">
+          <img src="./gokarna.jpg" alt="Beach - stock photo" loading="lazy" />
+          <div class="gal-overlay"><span>Gokarna Beach</span></div>
+        </div>
+
+        <div class="gal-item ri" data-d="300">
+          <img src="./bandipur.jpg" alt="Wildlife - stock photo" loading="lazy" />
+          <div class="gal-overlay"><span>Bandipur Safari</span></div>
+        </div>
+
+        <div class="gal-item ri" data-d="350">
+          <img src="./sakleshpura.jpg" alt="Road trip - stock photo" loading="lazy" />
+          <div class="gal-overlay"><span>Sakleshpura, Road to Paradise</span></div>
+        </div>
+
+        <div class="gal-item ri" data-d="400">
+          <img src="./malpe.jpeg" alt="Travel - stock photo" loading="lazy" />
+          <div class="gal-overlay"><span>Malpe Beach, Udupi</span></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <div class="lb-bg" id="lbBg"></div>
+      <button class="lb-close" id="lbClose">✕</button>
+      <button class="lb-prev" id="lbPrev">‹</button>
+      <button class="lb-next" id="lbNext">›</button>
+      <div class="lb-img-wrap">
+        <img id="lbImg" src="" alt="" class="lb-img" />
+        <p id="lbCap" class="lb-cap">Stock image — portfolio demonstration only.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section class="testi sec-pad" id="testimonials">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag ri">Traveller Stories</span>
+        <h2 class="sec-title ri">What Our Guests <span class="gold-text">Say</span></h2>
+        <p class="sec-sub ri">Experiences shared by our valued travellers — paraphrased themes for demonstration</p>
+      </div>
+
+      <div class="testi-track-wrap">
+        <div class="testi-track" id="testiTrack">
+
+          <div class="testi-card">
+            <div class="tc-quote">❝</div>
+            <p class="tc-text">The Coorg trip was absolutely magical. Every detail was handled — hotel, cab, sightseeing
+              — all perfectly coordinated. Will definitely book again!</p>
+            <div class="tc-foot">
+              <div class="tc-av">R</div>
+              <div class="tc-info">
+                <span class="tc-name">Rajesh K.</span>
+                <span class="tc-loc">Bengaluru</span>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-quote">❝</div>
+            <p class="tc-text">Our Mysore palace tour was incredible. The driver was knowledgeable, the vehicle was
+              comfortable, and the whole experience felt premium without breaking the bank.</p>
+            <div class="tc-foot">
+              <div class="tc-av">P</div>
+              <div class="tc-info">
+                <span class="tc-name">Priya S.</span>
+                <span class="tc-loc">Mumbai</span>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-quote">❝</div>
+            <p class="tc-text">Best airport transfer service I've used in Karnataka. Always on time, professional, and
+              the car was spotlessly clean. Highly recommended for business travellers.</p>
+            <div class="tc-foot">
+              <div class="tc-av">A</div>
+              <div class="tc-info">
+                <span class="tc-name">Arun M.</span>
+                <span class="tc-loc">Hyderabad</span>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-quote">❝</div>
+            <p class="tc-text">Gokarna beach trip was perfectly planned. The team suggested the best time to visit each
+              beach and even recommended local food spots. Felt like travelling with a local friend!</p>
+            <div class="tc-foot">
+              <div class="tc-av">S</div>
+              <div class="tc-info">
+                <span class="tc-name">Sneha L.</span>
+                <span class="tc-loc">Chennai</span>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="tc-quote">❝</div>
+            <p class="tc-text">Hampi trip exceeded every expectation. The custom itinerary was thoughtfully put together
+              — giving us enough time at each site without feeling rushed. Absolutely loved it!</p>
+            <div class="tc-foot">
+              <div class="tc-av">V</div>
+              <div class="tc-info">
+                <span class="tc-name">Vikram D.</span>
+                <span class="tc-loc">Pune</span>
+              </div>
+              <div class="tc-stars">★★★★★</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testi-controls">
+          <button class="tc-btn" id="tPrev">←</button>
+          <div class="tc-dots" id="tcDots"></div>
+          <button class="tc-btn" id="tNext">→</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact sec-pad" id="contact">
+    <div class="container">
+      <div class="sec-head">
+        <span class="sec-tag ri">Let's Talk</span>
+        <h2 class="sec-title ri">Plan Your <span class="gold-text">Journey</span></h2>
+        <p class="sec-sub ri">Tell us where you want to go — we'll handle everything else</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-form-wrap ri" data-d="0">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Name <span class="req">*</span></label>
+                <input type="text" id="fieldName" class="form-input" placeholder="John Doe" required
+                  autocomplete="name" />
+                <span class="field-err" id="errName">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone / Email <span class="req">*</span></label>
+                <input type="text" id="fieldContact" class="form-input" placeholder="+91 XXXXX XXXXX" required
+                  autocomplete="tel" />
+                <span class="field-err" id="errContact">Please enter phone or email</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Destination</label>
+                <input type="text" id="fieldDest" class="form-input" placeholder="e.g. Coorg, Hampi..."
+                  autocomplete="off" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Travel Date</label>
+                <input type="date" id="fieldDate" class="form-input" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Number of Travellers</label>
+              <select id="fieldTravellers" class="form-input form-select">
+                <option value="">Select...</option>
+                <option value="1–2 Travellers">1–2 Travellers</option>
+                <option value="3–5 Travellers">3–5 Travellers</option>
+                <option value="6–10 Travellers">6–10 Travellers</option>
+                <option value="10+ Travellers">10+ Travellers</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Tell Us More</label>
+              <textarea id="fieldMessage" class="form-input form-textarea"
+                placeholder="Any special requirements, preferred hotels, etc." rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold form-submit mag-btn" id="submitBtn">
+              <span id="submitText">Send Enquiry</span>
+              <span class="submit-arrow" id="submitArrow">✈</span>
+            </button>
+
+            <!-- Validation error banner -->
+            <div class="form-error-banner" id="formErrorBanner">
+              ⚠ Please fill in your name and contact number before sending.
+            </div>
+          </form>
+
+          <!-- Success message -->
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">✅</div>
+            <h3>We've received your enquiry!</h3>
+            <p>Our team will reach out within 24 hours. Happy travels! ✈️</p>
+          </div>
+        </div>
+
+        <div class="contact-info ri" data-d="200">
+
+          <div class="ci-card">
+            <div class="ci-icon">📍</div>
+            <div class="ci-content">
+              <h4 class="ci-label">Based In</h4>
+              <p class="ci-val">Bengaluru, Karnataka, India</p>
+            </div>
+          </div>
+
+          <div class="ci-card">
+            <div class="ci-icon">✈️</div>
+            <div class="ci-content">
+              <h4 class="ci-label">We Serve</h4>
+              <p class="ci-val">Pan Karnataka + all major Indian destinations</p>
+            </div>
+          </div>
+
+          <div class="ci-card">
+            <div class="ci-icon">🕐</div>
+            <div class="ci-content">
+              <h4 class="ci-label">Availability</h4>
+              <p class="ci-val">24/7 — always here for you</p>
+            </div>
+          </div>
+
+          <div class="ci-card">
+            <div class="ci-icon">💳</div>
+            <div class="ci-content">
+              <h4 class="ci-label">Payment</h4>
+              <p class="ci-val">UPI · Bank Transfer · Cards · Cash</p>
+            </div>
+          </div>
+
+          <!-- Quick CTA -->
+          <div class="ci-cta">
+            <p class="ci-cta-text">Ready to travel? Call us directly</p>
+            <a href="tel:+918861947700" class="btn btn-gold ci-call mag-btn">📞 Call Now</a>
+            <a href="https://wa.me/918861947700" target="_blank" class="btn btn-outline-gold ci-wa mag-btn">💬
+              WhatsApp</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+     PRICING / RATE CARD SECTION
+============================================================ -->
+  <section class="pricing sec-pad" id="pricing">
+    <div class="container">
+
+      <div class="pricing-top">
+        <div class="pricing-left ri">
+          <span class="sec-tag">Rate Card</span>
+          <h2 class="pricing-main-title">Nishu Tours And Travels — Pricing</h2>
+          <p class="pricing-disclaimer">
+            Prices exclude GST. Toll, parking, permits and state entry charges
+            are extra and payable by the customer. Rates may vary by season
+            and distance.
+          </p>
+        </div>
+      </div>
+
+      <div class="pricing-tables-wrap">
+
+        <!-- City → Airport -->
+        <div class="rate-table ri" data-d="0">
+          <div class="rate-table-head">
+            <h3 class="rate-cat-title">City → Airport</h3>
+            <p class="rate-cat-sub">Flat rate, pickup &amp; drop</p>
+          </div>
+          <div class="rate-rows">
+            <div class="rate-row">
+              <span class="rate-vehicle">Sedan</span>
+              <span class="rate-price">₹1,200</span>
+            </div>
+            <div class="rate-row">
+              <span class="rate-vehicle">SUV</span>
+              <span class="rate-price">₹1,800</span>
+            </div>
+            <div class="rate-row">
+              <span class="rate-vehicle">Innova Crysta</span>
+              <span class="rate-price">₹2,100</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="rate-divider ri" data-d="100"></div>
+
+        <!-- Outstation -->
+        <div class="rate-table ri" data-d="150">
+          <div class="rate-table-head">
+            <h3 class="rate-cat-title">Outstation</h3>
+            <p class="rate-cat-sub">Per km, garage to garage</p>
+          </div>
+          <div class="rate-rows">
+            <div class="rate-row">
+              <span class="rate-vehicle">Sedan</span>
+              <span class="rate-price">₹13 / km</span>
+            </div>
+            <div class="rate-row">
+              <span class="rate-vehicle">SUV</span>
+              <span class="rate-price">₹17 / km</span>
+            </div>
+            <div class="rate-row">
+              <span class="rate-vehicle">Innova Crysta</span>
+              <span class="rate-price">₹20 / km</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="rate-divider ri" data-d="200"></div>
+
+        <!-- Driver Bhata -->
+        <div class="rate-table ri" data-d="250">
+          <div class="rate-table-head">
+            <h3 class="rate-cat-title">Driver Bhata</h3>
+            <p class="rate-cat-sub">Driver allowance, per day</p>
+          </div>
+          <div class="rate-rows">
+            <div class="rate-row">
+              <span class="rate-vehicle">Sedan</span>
+              <span class="rate-price">₹400 / day</span>
+            </div>
+            <div class="rate-row">
+              <span class="rate-vehicle">SUV</span>
+              <span class="rate-price">₹500 / day</span>
+            </div>
+            <div class="rate-row">
+              <span class="rate-vehicle">Innova Crysta</span>
+              <span class="rate-price">₹600 / day</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer note -->
+      <div class="pricing-footnote ri" data-d="300">
+        <span class="footnote-icon">⚠</span>
+        <span>Toll &amp; parking charges extra, on top of the rates above.</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BIG CTA
+  ============================================================ -->
+  <section class="big-cta">
+    <div class="bcta-parallax"></div>
+    <div class="bcta-overlay"></div>
+    <div class="bcta-content">
+      <span class="bcta-tag">Your Adventure Awaits</span>
+      <h2 class="bcta-title ri">Ready to <span class="gold-text">Explore?</span></h2>
+      <p class="bcta-sub ri">Drop us a message and let's build your dream Karnataka journey today</p>
+      <div class="bcta-btns">
+        <a href="#contact" class="btn btn-gold btn-xl mag-btn">Plan My Trip</a>
+        <a href="#destinations" class="btn btn-outline-gold btn-xl mag-btn">Browse Destinations</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon">✈</div>
+            <div class="logo-text">
+              <span class="logo-main">Nishu</span>
+              <span class="logo-sub">Tours & Travels</span>
+            </div>
+          </div>
+          <p class="footer-tagline">Crafting unforgettable journeys across Karnataka and beyond. Your trusted travel
+            partner — every mile, every memory.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">📸</a>
+            <a href="#" class="social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Top Destinations</h4>
+          <ul class="footer-links">
+            <li><a href="#contact">Coorg</a></li>
+            <li><a href="#contact">Mysore</a></li>
+            <li><a href="#contact">Hampi</a></li>
+            <li><a href="#contact">Chikmagalur</a></li>
+            <li><a href="#contact">Gokarna</a></li>
+            <li><a href="#contact">Bandipur</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li>Airport Transfers</li>
+            <li>Hill Station Tours</li>
+            <li>Heritage Tours</li>
+            <li>Beach Tours</li>
+            <li>Wildlife Safaris</li>
+            <li>Corporate Travel</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Nishu Tours & Travels. All Rights Reserved.</p>
+        <p class="footer-disc">Built by Apex Web Studios</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
